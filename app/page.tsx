@@ -13,7 +13,6 @@ export default function Home() {
       <AppShell.Header>
         <Header></Header>
       </AppShell.Header>
-
       <AppShell.Main
         className="
     grid grid-cols-1 

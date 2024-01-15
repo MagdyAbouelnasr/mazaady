@@ -17,13 +17,13 @@ function QrCodeCard() {
       <div className="w-full flex justify-between items-center mb-4">
         <p className="text-lg font-semibold">QR CODE</p>
         <div className="flex items-center">
-          <EyeIcon className="h-7 w-7 mx-1" />
-          <ShareIcon className="h-7 w-7 mx-1" />
-          <ArrowDownOnSquareStackIcon className="h-7 w-7 mx-1" />
+          <EyeIcon className="h-7 w-7 mx-1 cursor-pointer" />
+          <ShareIcon className="h-7 w-7 mx-1 cursor-pointer" />
+          <ArrowDownOnSquareStackIcon className="h-7 w-7 mx-1 cursor-pointer" />
           {/* Collapse Button for small screens */}
           <button
             onClick={() => setIsCollapsed(!isCollapsed)}
-            className="md:hidden h-7 w-7 mx-1"
+            className="md:hidden h-7 w-7 mx-1 cursor-pointer"
           >
             {isCollapsed ? <ChevronDownIcon /> : <ChevronUpIcon />}
           </button>
