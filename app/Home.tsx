@@ -1,9 +1,6 @@
 "use client";
-
 import ProfileCard from "@/components/ProfileCard";
-import QrCodeCard from "@/components/QrCodeCard";
 import Header from "@/components/header";
-
 import { AppShell } from "@mantine/core";
 
 export default function Home() {
@@ -15,9 +12,9 @@ export default function Home() {
 
       <AppShell.Main
         className="
-    grid grid-cols-1 
-    lg:grid-cols-[1.5fr_2fr] 
-    gap-4 bg-gray-50 mt-4"
+        grid grid-cols-1 
+        md:grid-cols-2 
+        gap-4 bg-gray-50 mt-4"
       >
         <div className="grid grid-cols-1 gap-6">
           <ProfileCard />

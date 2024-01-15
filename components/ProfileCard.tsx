@@ -10,16 +10,18 @@ import {
   SimpleGrid,
 } from "@mantine/core";
 
+
 function ProfileCard() {
   return (
     <Card shadow="sm" padding="lg" radius="md" withBorder>
       <Card.Section inheritPadding mt="sm" pb="md">
-        <SimpleGrid cols={3} className="">
+        <SimpleGrid cols={3}>
           <div className="rounded-xl overflow-hidden">
             <Image
               src="user-image.jpg"
               alt="user image"
               className="radius-sm"
+              fallbackSrc="https://placehold.co/600x400?text=Placeholder"
             />
           </div>
         </SimpleGrid>
