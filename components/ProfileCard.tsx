@@ -4,18 +4,15 @@ import {
   Image,
   Text,
   Badge,
-  Button,
   Group,
-  Pill,
   SimpleGrid,
 } from "@mantine/core";
-
 
 function ProfileCard() {
   return (
     <Card shadow="sm" padding="lg" radius="md" withBorder>
       <Card.Section inheritPadding mt="sm" pb="md">
-        <SimpleGrid cols={3}>
+        <SimpleGrid cols={{ base: 2, lg: 3 }}>
           <div className="rounded-xl overflow-hidden">
             <Image
               src="user-image.jpg"
@@ -80,7 +77,7 @@ function ProfileCard() {
           }
           variant="light"
           color="orange"
-          size="xl"
+          className={`md:badge-xl badge-xs bg-orange-200 rounded-lg`}
           radius={16}
           h={64}
         >
@@ -130,7 +127,7 @@ function ProfileCard() {
           }
           variant="light"
           color="orange"
-          size="xl"
+          className={`md:badge-xl badge-xs bg-orange-200 rounded-lg`}
           radius={16}
           h={64}
         >
@@ -165,7 +162,7 @@ function ProfileCard() {
           }
           variant="light"
           color="orange"
-          size="xl"
+          className={`md:badge-xl badge-xs bg-orange-200 rounded-lg`}
           radius={16}
           h={64}
         >
@@ -176,7 +173,7 @@ function ProfileCard() {
         </Badge>
       </div>
 
-      <button className="bg-gradient-to-r from-red-600 to-orange-500 hover:from-pink-500 hover:to-yellow-500 rounded-xl h-12">
+      <button className="text-white bg-gradient-to-r from-red-600 to-orange-500 hover:from-pink-500 hover:to-yellow-500 rounded-xl h-12">
         Follow
       </button>
     </Card>

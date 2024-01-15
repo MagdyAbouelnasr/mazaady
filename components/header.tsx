@@ -70,7 +70,7 @@ const Header: React.FC = () => {
         <div className="hidden  md:flex">
           <button
             type="button"
-            className="flex items-center justify-center bg-gradient-to-r from-red-600 to-orange-500 hover:from-pink-500 hover:to-yellow-500 mr-4 ml-4 w-44 h-12 rounded"
+            className="flex items-center justify-center bg-gradient-to-r from-red-600 to-orange-500 hover:from-pink-500 hover:to-yellow-500 mr-4 ml-4 w-48 h-12 rounded"
           >
             <PlusCircleIcon stroke="white" className="w-6 h-6 ml-1" />
             <span className="ml-2 text-white">Add New Product</span>

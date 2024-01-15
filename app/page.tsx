@@ -1,5 +1,6 @@
 "use client";
 
+import ListsCard from "@/components/ListsCard";
 import ProfileCard from "@/components/ProfileCard";
 import QrCodeCard from "@/components/QrCodeCard";
 import Header from "@/components/header";
@@ -24,7 +25,7 @@ export default function Home() {
           <QrCodeCard />
         </div>
         <div>
-          <ProfileCard />
+          <ListsCard />
         </div>
       </AppShell.Main>
     </AppShell>
