@@ -36,9 +36,9 @@ function QrCodeCard() {
           className="flex flex-row items-center py-2 px-4 rounded-lg mb-8 mt-4"
           variant="light"
           h={42}
-          w={420}
+          w={400}
           color="orange"
-          leftSection={<ArrowDownOnSquareStackIcon className="h-7 w-7 mr-2" />}
+          leftSection={<ArrowDownOnSquareStackIcon className="h-7 w-7 " />}
         >
           <span className="text-black font-medium">
             Download the QR code or share it with your friends.
