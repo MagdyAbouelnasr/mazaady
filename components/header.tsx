@@ -17,6 +17,7 @@ function Header({ onSearchIconClick }: any) {
     <header className="bg-white shadow-sm p-4 flex justify-between items-center">
       <div className="flex items-center">
         <Burger
+          aria-label="burger-menu"
           mr={12}
           opened={isMenuOpen}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -53,9 +54,7 @@ function Header({ onSearchIconClick }: any) {
             </button>
           </HoverCard.Target>
           <HoverCard.Dropdown>
-            <Text className="sm">
-              Click For Form Search
-            </Text>
+            <Text className="sm">Click For Form Search</Text>
           </HoverCard.Dropdown>
         </HoverCard>
         <BellIcon width={25} className="mr-8 ml-8 cursor-pointer"></BellIcon>
@@ -79,7 +78,7 @@ function Header({ onSearchIconClick }: any) {
         onClose={() => setIsMenuOpen(false)}
         title="Mazaady Menu"
         closeButtonProps={{
-          iconSize: "md",
+          iconSize: "24px",
         }}
       >
         <nav className="p-4">
