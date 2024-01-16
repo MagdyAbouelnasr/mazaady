@@ -38,9 +38,9 @@ function QrCodeCard() {
           h={42}
           w={400}
           color="orange"
-          leftSection={<ArrowDownOnSquareStackIcon className="h-7 w-7 " />}
+          leftSection={<ArrowDownOnSquareStackIcon className="h-7 w-7" />}
         >
-          <span className="text-black font-medium">
+          <span className="text-black font-medium flex-initial">
             Download the QR code or share it with your friends.
           </span>
         </Badge>

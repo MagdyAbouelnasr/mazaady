@@ -29,7 +29,6 @@ function ProfileCard() {
       <div className="flex justify-between mt-4 mb-4">
         <Badge
           leftSection={
-            <div className="hidden xs:flex">
               <svg
                 width="24"
                 height="24"
@@ -68,7 +67,6 @@ function ProfileCard() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </div>
           }
           variant="light"
           color="orange"
@@ -81,7 +79,6 @@ function ProfileCard() {
         </Badge>
         <Badge
           leftSection={
-            <div className="hidden xs:flex">
               <svg
                 width="24"
                 height="24"
@@ -120,7 +117,6 @@ function ProfileCard() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </div>
           }
           variant="light"
           color="orange"
@@ -133,7 +129,6 @@ function ProfileCard() {
         </Badge>
         <Badge
           leftSection={
-            <div className="hidden xs:flex">
               <svg
                 width="24"
                 height="24"
@@ -157,7 +152,6 @@ function ProfileCard() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </div>
           }
           variant="light"
           color="orange"
