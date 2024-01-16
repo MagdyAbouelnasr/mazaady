@@ -15,6 +15,7 @@ function ListsCard() {
       days: 2,
       hours: 3,
       minutes: 30,
+      isFavorited: false,
     },
     {
       name: "Item 1",
@@ -23,6 +24,7 @@ function ListsCard() {
       days: 2,
       hours: 3,
       minutes: 30,
+      isFavorited: true,
     },
     {
       name: "Item 1",
@@ -31,6 +33,7 @@ function ListsCard() {
       days: 2,
       hours: 3,
       minutes: 30,
+      isFavorited: false,
     },
     // ... more items
   ];

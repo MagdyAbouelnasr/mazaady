@@ -9,6 +9,7 @@ function ListItem({
   days,
   hours,
   minutes,
+  isFavorited,
 }: any) {
   return (
     <div className="flex items-start p-2">
@@ -20,7 +21,13 @@ function ListItem({
           height={50}
           className="rounded-full"
         />
-        <HeartIcon className="h-6 w-6 text-red-500 cursor-pointer absolute top-0 left-0 sm:invisible" />
+        <HeartIcon
+          className="h-6 w-6 text-red-500 cursor-pointer absolute top-0 left-0 sm:invisible"
+          style={{
+            fill: isFavorited ? "red" : "none",
+            color: isFavorited ? "red" : "currentColor",
+          }}
+        />
       </div>
       <div className="flex-grow mt-2">
         <div className="flex justify-between items-center w-full">
@@ -30,7 +37,13 @@ function ListItem({
               Starting Price {startingPrice}
             </p>
           </div>
-          <HeartIcon className="h-6 w-6 text-red-500 hidden sm:block" />
+          <HeartIcon
+            className="h-6 w-6 text-red-500 hidden sm:block"
+            style={{
+              fill: isFavorited ? "red" : "none",
+              color: isFavorited ? "red" : "currentColor",
+            }}
+          />
         </div>
         <div className="flex flex-col sm:flex-row items-start sm:items-center">
           <span className="text-sm mr-2 mt-2 sm:mt-0">Lot Starts in</span>

@@ -2,10 +2,15 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Avatar, Burger, Drawer } from "@mantine/core";
-import { BellIcon, GlobeAltIcon, MagnifyingGlassCircleIcon, MagnifyingGlassIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
+import { Avatar, Burger, Drawer, HoverCard, Text } from "@mantine/core";
+import {
+  BellIcon,
+  GlobeAltIcon,
+  MagnifyingGlassIcon,
+  PlusCircleIcon,
+} from "@heroicons/react/24/outline";
 
-const Header: React.FC = () => {
+function Header({ onSearchIconClick }: any) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -38,11 +43,22 @@ const Header: React.FC = () => {
 
       {/* right section */}
       <div className="flex items-center">
-        <MagnifyingGlassIcon
-          width={25}
-          className="mr-8 cursor-pointer"
-        ></MagnifyingGlassIcon>
-        <BellIcon width={25} className="mr-8 cursor-pointer"></BellIcon>
+        <HoverCard width={200} shadow="md">
+          <HoverCard.Target>
+            <button onClick={onSearchIconClick}>
+              <MagnifyingGlassIcon
+                width={25}
+                className=" cursor-pointer"
+              ></MagnifyingGlassIcon>
+            </button>
+          </HoverCard.Target>
+          <HoverCard.Dropdown>
+            <Text className="sm">
+              Click For Form Search
+            </Text>
+          </HoverCard.Dropdown>
+        </HoverCard>
+        <BellIcon width={25} className="mr-8 ml-8 cursor-pointer"></BellIcon>
         <Avatar src="user-image.jpg" size="lg" alt="user photo" />
         <div className="hidden  md:flex">
           <button
@@ -92,6 +108,6 @@ const Header: React.FC = () => {
       </Drawer>
     </header>
   );
-};
+}
 
 export default Header;
