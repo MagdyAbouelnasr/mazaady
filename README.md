@@ -1,4 +1,4 @@
-# Mazaady Portal - Frontend Task
+# Mazaady
 
 This project is part of the Mazaady Portal frontend development task. It focuses on demonstrating coding techniques, quality, and testing methods using React and Next.js.
 
